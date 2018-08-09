@@ -14,3 +14,23 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/page', function () {
+    return view('page');
+});
+
+Route::get('/check', function (){echo '<pre>'; print_r($_ENV); echo '</pre>';});
+
+//Route::post('/comments', function(){
+//		echo '<pre>';print_r($_POST);echo '</pre>';
+//});
+
+
+//Route::match(['get', 'post'],'/comments', function(){
+//		echo '<pre>';print_r($_POST);echo '</pre>';
+//});
+
+Route::any('/comments', function(){
+		echo '<pre>';print_r($_POST);echo '</pre>';
+});

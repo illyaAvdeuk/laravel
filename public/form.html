@@ -1,0 +1,18 @@
+<html>
+<body>
+	<meta charset="UTF-8">
+<form action="/comments" method="POST">
+Это будут кнопки:
+<br/><input type="radio" name="answer" value="a1">Кнопка один
+<br/><input type="radio" name="answer" value="a2">Кнопка два
+<br/><input type="radio" name="answer" value="a3">Кнопка три
+<br/>А это будет текстовое поле. Например сюда можно вводить логин
+<br/><input type="text" name="login" style="width:400px;" value="Значение по умолчанию">
+<br/>А это будет большое текстовое поле. Например сюда можно ввести информацию о себе
+<br/><input style="width:400px; height:150px" type="textarea" name="osebe" value="">
+<br/>После всего перечисленного будет кнопка ОК
+<br/><input type="submit" value="OK">
+</form>
+<br/>После нажатия кнопки ОК, страница просто обновится, т.к. мы не прописали параметр action
+</body>
+</html>
